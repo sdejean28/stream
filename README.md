@@ -13,12 +13,9 @@ This is a NodeJS module to help you process modbus data. It uses [pdu](https://g
 - [x] Support standard exceptions
 - [x] Support transports
     - [x] TCP
-    - [x] RTU
-    - [x] ASCII
 - [x] Support drivers
     - [x] TCP
     - [x] UDP
-    - [x] Serial (RS232, RS485)
 
 ### Example
 
@@ -66,15 +63,6 @@ modbus.tcp.server({ debug: "server" }, (connection) => {
 });
 ```
 
-To connecto to a modbus device over a serial port, use:
-
-```js
-var modbus = require("modbus-stream");
-
-modbus.serial.connect("/dev/ttyS123", { debug: "automaton-123" }, (err, connection) => {
-    // do something with connection
-});
-```
 
 ### Requests
 
